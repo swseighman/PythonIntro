@@ -1,6 +1,6 @@
-### Python Basics
+# Python Basics
 
-### IF Statements
+## IF Statements
 
 Programming often involves examining a set of conditions and deciding which action to take based on those conditions. Python’s if statement allows you to examine the current state of a program and respond appropriately to that state.
 

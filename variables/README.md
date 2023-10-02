@@ -1,7 +1,7 @@
 
-### Python Basics
+# Python Basics
 
-### Variables
+## Variables
 
 Variables are often described as containers where you store values. Variables can be used to store anything from simple data types (like integers and strings) to more complex data structures (like lists and dictionaries). You can think of them as labels you attach to values to keep track of them. You can also say that a variable references a certain value.
 

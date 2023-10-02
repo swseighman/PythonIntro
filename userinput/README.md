@@ -1,6 +1,6 @@
-### Python Basics
+# Python Basics
 
-### User Input
+## User Input
 
 Most programs are written to solve an end user’s problem. To do so, you usually need to get some information from the user. For example, say someone wants to find out whether they’re old enough to vote. If you write a program to answer this question, you need to know the user’s age before you can provide an answer. The program will need to ask the user to enter, or input, their age; once the program has this input, it can compare it to the voting age to determine if the user is old enough and then report the result.
 

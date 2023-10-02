@@ -1,6 +1,6 @@
-### Python Basics
+# Python Basics
 
-### Numbers
+## Numbers
 
 Numbers are used quite often in programming to keep score in games, represent data in visualizations, store information in web applications, and so on. Python treats numbers in several different ways, depending on how they’re being used. Let’s first look at how Python manages integers, because they’re the simplest to work with.
 

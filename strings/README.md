@@ -1,6 +1,6 @@
-### Python Basics
+# Python Basics
 
-### Strings
+## Strings
 
 Because most programs define and gather some sort of data and then do something useful with it, it helps to classify different types of data. The first data type we’ll look at is the string. Strings are quite simple at first glance, but you can use them in many different ways.
 
