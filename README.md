@@ -159,16 +159,16 @@ We'll walk through basic features of the Python language (located in the `basics
 
 * [Variables](basics/variables)
 * Data Types
-    * Strings
-    * Numbers
-    * Collections (Lists)
-* User Input
+    * [Strings](basics/strings)
+    * [Numbers](basics/numbers)
+    * [Collections (Lists)](basics/lists)
+* [User Input](basics/userinput)
 * Loops
-    * For Loops
-    * While Loops
-* Conditionals
-* Formatting
-* Comments
+    * [For Loops](basics/loops)
+    * [While Loops](basics/whileloops)
+* [Conditionals](basics/conditionals)
+* [Formatting](basics/formatting)
+* [Comments](basics/comments)
 
 
 ## Resources
