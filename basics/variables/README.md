@@ -5,6 +5,10 @@
 
 Variables are often described as containers where you store values. Variables can be used to store anything from simple data types (like integers and strings) to more complex data structures (like lists and dictionaries). You can think of them as labels you attach to values to keep track of them. You can also say that a variable references a certain value.
 
+Python uses `=` to assign values to variables. There's no need to declare a variable in advance (or to assign a data type to it), assigning a value to a variable itself declares and initializes the variable with that value.
+
+>Data types are the classification or categorization of data items and include numeric types (int, float, complex), textual types (str), collection types (list, tuple, dict, set), and boolean type (bool).
+
 Let’s try using a variable in `hello_world.py`. Add a new line at the beginning of the file, and modify the second line:
 
 ```

@@ -38,7 +38,7 @@ Installing Python is generally easy, and nowadays many Linux and UNIX distributi
 
 #### Python Development Tools
 
-Every Python installation comes with an **Integrated Development and Learning Environment**, which you’ll see shortened to IDLE or even IDE. These are a class of applications that help you write code more efficiently. While there are many IDEs for you to choose from, Python IDLE is very basic, which makes it the perfect tool for a beginning programmer.
+Every Python installation comes with an **Integrated Development and Learning Environment**, which you’ll see shortened to **IDLE** or even IDE. These are a class of applications that help you write code more efficiently. While there are many IDEs for you to choose from, Python IDLE is very basic, which makes it the perfect tool for a beginning programmer.
 
 Python IDLE comes included in Python installations on Windows and Mac. If you’re a Linux user, then you should be able to find and download Python IDLE using your package manager. Once you’ve installed it, you can then use Python IDLE as an interactive interpreter or as a file editor:
 
@@ -48,7 +48,7 @@ Python IDLE comes included in Python installations on Windows and Mac. If you’
 
 For our labs, we'll be using **Visual Studio Code**, a free coding editor that helps you start coding quickly. Use it to code in any programming language, without switching editors. Visual Studio Code has support for many languages, including Python, Java, C++, JavaScript, and more.
 
-Visual Studio Code is built with extensibility in mind. From the UI to the editing experience, almost every part of VS Code can be customized and enhanced through the Extension API. In fact, many core features of VS Code are built as extensions and use the same Extension API.
+[Visual Studio Code](https://code.visualstudio.com/) is built with extensibility in mind. From the UI to the editing experience, almost every part of VS Code can be customized and enhanced through the Extension API. In fact, many core features of VS Code are built as extensions and use the same Extension API.
 
 ![](images/vscode.png)
 
@@ -56,14 +56,16 @@ We'll be using a Python extension to help guide us through the coding exercises:
 
 ![](images/python-extension.png)
 
-You can choose to use the command line interface (CLI) to write and execute Python scripts in interactive mode. It's straightforward and simple but can become a bit cumbersome when you begin to write more advanced applications.
+At a basic level, you can choose to use the command line interface (CLI) to write and execute Python scripts in interactive mode. It's straightforward and simple but can become a bit cumbersome when you begin to write more advanced applications.
 
 First, open a Windows Terminal:
 
-1. Press Win + X to open the menu.
-2. Scroll down to Terminal and click on the Terminal app (or enter "i" as a shortcut)
+1. Press `Win + X` to open the menu.
+2. Scroll down to **Terminal** and click on the Terminal app (or enter "i" as a shortcut)
 
 A Windows Terminal will be displayed.
+
+Enter `python` to start the interpreter:
 
 ```
 C:\> python
@@ -73,7 +75,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 C:\>
 ```
-Let's try to enter some Python interpreter commands:
+
+>To exit the interpreter, type `CTRL + Z`, then the **Enter** key or type `exit()` and then the **Enter** key.
+
+Let's enter some commands in the Python interpreter:
 
 ```
 C:\> python
@@ -85,23 +90,39 @@ Hello Python interpreter!
 
 The interactive interpreter is a good introductory platform to learn core Python syntax and features. Experienced Python developers often open a Python interpreter to quickly check out an infrequently used command or function.
 
-You can run a Python script via the CLI too.
-
-Create a file called `hello_world.py` and enter the following line in the editor:
+You can create a Python script and run the script via the CLI too.  For example, open Notepad (`Win + R`, then type `notepad` and hit the `Enter key`) and add the following line:
 
 ```
 print("Hello Python world!")
 ```
 
-Enter the following commands to run `hello_world.py`:
+Click `File->Save As` and enter `hello_world.py`.
+
+>`.py` is the standard file extension for Python source code files. These files contain Python code that can be executed by a Python interpreter.
+
+Enter the following command to run `hello_world.py`:
 
 ```
 C:\> python hello_world.py
 Hello Python world!
 ```
 
-#### Running Python in the Browser
-There are also options for running Python code within a browser session, executed in either the browser process or some separate server-based component. PyScript is an example of a browser process.
+#### Running Python in a Browser
+There are also options for running Python code within a browser session, executed in either the browser process or some separate server-based component. 
+
+**Replit**
+
+A Repl (derived from REPL—"read-eval-print loop") is an interactive programming environment where you can write and execute code in real-time.
+
+From their site:
+
+*Replit provides a large range of tools and features necessary for software development. It serves as an IDE, a code collaboration platform, a cloud provider, a developer community, and so much more.*
+
+The workspace is like an IDE (Integrated Development Environment), providing a comprehensive set of development tools and features for creating, debugging, and managing your software. It helps you quickly and easily create, modify, and collaborate on your code.
+
+Visit [https://replit.com/](https://replit.com/) to try out the environment.
+
+**PyScript** is an example of a browser process.
 
 A recent development in the Python-in-a-browser endeavor is the release of PyScript by Anaconda. PyScript is built on top of Pyodide,7 which uses WebAssembly to bring up a full Python engine in the browser. PyScript introduces custom HTML tags so that you can write Python code without having to know or use JavaScript. Using these tags, you can create a static HTML file containing Python code that will run in a remote browser, with no additional installed software required.
 
@@ -133,8 +154,28 @@ You can save this code snippet as a static HTML file and successfully run it in 
 
 For more complete and up-to-date information, see the [PyScript website](https://pyscript.net/).
 
+Next, we'll walk through basic features of the Python language:
+
+* Variables
+* Data Types
+    * Strings
+    * Numbers
+    * Collections (Lists)
+* User Input
+* Loops
+    * For Loops
+    * While Loops
+* Conditionals
+* Formatting
+* Comments
+
 
 ## Resources
 
 [Python Documentation](https://docs.python.org/3/)
+
+[Python Cheat Sheets](https://github.com/ehmatthes/pcc_3e/blob/main/cheat_sheets/bw_sheets/beginners_python_cheat_sheet_pcc_all_bw.pdf)
+
+[Beginners Guides](https://wiki.python.org/moin/BeginnersGuide/Programmers)
+
 

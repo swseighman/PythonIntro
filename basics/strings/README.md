@@ -1,4 +1,4 @@
-# Python Basics
+# Data Types
 
 ## Strings
 
@@ -27,6 +27,8 @@ One of the simplest tasks you can do with strings is change the case of the word
 name = "ada lovelace"
 print(name.title())
 ```
+
+>`title` is a Python method which are functions that are associated with objects. Methods are used to perform actions on objects.
 
 Save this file as `name.py` and then run it. You should see this output:
 

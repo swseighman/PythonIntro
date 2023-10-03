@@ -1,4 +1,4 @@
-# Python Basics
+# Data Types
 
 ## Numbers
 
