@@ -54,10 +54,25 @@ Rules for Keywords in Python
 
 #### List of Python Keywords
 
-| Keyword | Description |
-|---------|-------------|
-| and     | Some text   |
-| raise   | Some text   |
+| Keywords |          |
+|----------|----------|
+| and      | as       |
+| assert   | break    |
+| class    | continue |
+| def      | del      |
+| elif     | else     |
+| except   | False    |
+| finally  | for      |
+| from     | global   |
+| if       | import   |
+| in       | is       |
+| lambda   | None     |
+| nonlocal | not      |
+| pass     | raise    |
+| return   | True     |
+| try      | while    |
+| with     | yield    |
+
 
 #### Rules for Naming Python Identifiers
 * It cannot be a reserved Python keyword
