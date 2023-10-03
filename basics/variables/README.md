@@ -23,9 +23,9 @@ C:\> python hello_world.py
 Hello Python!
 ```
 
-We’ve added a variable named `message`. Every variable is connected to a value, which is the information associated with that variable. In this case the value is the `Hello Python!` text.
+We’ve added a variable named `message`. Every variable is connected to a value (object), which is the information associated with that variable. In this case the value (object) is the `Hello Python!` text.
 
-When you’re using variables in Python, you need to adhere to a few rules and guidelines. Breaking some of these rules will cause errors; other guidelines just help you write code that’s easier to read and understand. Be sure to keep the following rules in mind when working with variables:
+When you’re using variables in Python, you need to adhere to a few rules and guidelines. Breaking some of these rules will cause errors.  Other guidelines just help you write code that’s easier to read and understand. Be sure to keep the following rules in mind when working with variables:
 
 * Variable names can contain only letters, numbers, and underscores. They can start with a letter or an underscore, but not with a number. For instance, you can call a variable `message_1` but not `1_message`.
 * Spaces are not allowed in variable names, but underscores can be used to separate words in variable names. For example, `greeting_message` works but `greeting message` will cause errors.
@@ -48,7 +48,7 @@ Simply stated, if you wish to use the same variable throughout your program decl
 
 Python keywords are reserved words that have special meanings and cannot be used as variables, functions, or classes.
 
-In other words, Python keywords are words that are built into the Python language and have a specific meaning. They cannot be used as regular names for variables, functions, or classes.
+In other words, Python keywords are words that are built into the Python language and have a specific meaning.
 
 Rules for Keywords in Python
 * Python keywords cannot be used as identifiers. 
