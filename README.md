@@ -32,11 +32,11 @@ If you are interested in learning a programming language, Python is a great choi
 
 ## Getting Started
 
-### Installing Python
+#### Installing Python
 
-Installing Python is generally easy, and nowadays many Linux and UNIX distributions include a recent Python. Even some Windows computers now come with Python already installed. If you do need to install Python and aren't confident about the task you can find a few notes on the [BeginnersGuide/Download wiki page](https://wiki.python.org/moin/BeginnersGuide/Download), but installation is unremarkable on most platforms.
+Installing Python is generally easy, and nowadays many Linux and UNIX distributions include a recent Python. Even some Windows computers now come with Python already installed. If you do need to install Python and aren't confident about the steps, you can find a notes on the [BeginnersGuide/Download wiki page](https://wiki.python.org/moin/BeginnersGuide/Download), but installation is straightforward on most platforms.
 
-#### Coding Tools
+#### Python Development Tools
 
 Every Python installation comes with an **Integrated Development and Learning Environment**, which you’ll see shortened to IDLE or even IDE. These are a class of applications that help you write code more efficiently. While there are many IDEs for you to choose from, Python IDLE is very basic, which makes it the perfect tool for a beginning programmer.
 
@@ -44,7 +44,9 @@ Python IDLE comes included in Python installations on Windows and Mac. If you’
 
 ![](images/python-idle.png)
 
-For our lab, we'll be using **Visual Studio Code**, a free coding editor that helps you start coding quickly. Use it to code in any programming language, without switching editors. Visual Studio Code has support for many languages, including Python, Java, C++, JavaScript, and more.
+#### Using an Integrated Development Environment (IDE)
+
+For our labs, we'll be using **Visual Studio Code**, a free coding editor that helps you start coding quickly. Use it to code in any programming language, without switching editors. Visual Studio Code has support for many languages, including Python, Java, C++, JavaScript, and more.
 
 Visual Studio Code is built with extensibility in mind. From the UI to the editing experience, almost every part of VS Code can be customized and enhanced through the Extension API. In fact, many core features of VS Code are built as extensions and use the same Extension API.
 
@@ -54,16 +56,24 @@ We'll be using a Python extension to help guide us through the coding exercises:
 
 ![](images/python-extension.png)
 
-Of course, you can choose to use the command line interface (CLI) to write and execute Python scripts. It's straightforward and simple but can become a bit cumbersome when you begin to write more advanced applications.
+You can choose to use the command line interface (CLI) to write and execute Python scripts in interactive mode. It's straightforward and simple but can become a bit cumbersome when you begin to write more advanced applications.
+
+First, open a Windows Terminal:
+
+1. Press Win + X to open the menu.
+2. Scroll down to Terminal and click on the Terminal app (or enter "i" as a shortcut)
+
+A Windows Terminal will be displayed.
 
 ```
 C:\> python
 Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
->>> ^Z
+>>> ^Z (Enter)
 
 C:\>
 ```
+Let's try to enter some Python interpreter commands:
 
 ```
 C:\> python
@@ -72,6 +82,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> print("Hello Python interpreter!")
 Hello Python interpreter!
 ```
+
+The interactive interpreter is a good introductory platform to learn core Python syntax and features. Experienced Python developers often open a Python interpreter to quickly check out an infrequently used command or function.
+
+You can run a Python script via the CLI too.
 
 Create a file called `hello_world.py` and enter the following line in the editor:
 
@@ -85,6 +99,40 @@ Enter the following commands to run `hello_world.py`:
 C:\> python hello_world.py
 Hello Python world!
 ```
+
+#### Running Python in the Browser
+There are also options for running Python code within a browser session, executed in either the browser process or some separate server-based component. PyScript is an example of a browser process.
+
+A recent development in the Python-in-a-browser endeavor is the release of PyScript by Anaconda. PyScript is built on top of Pyodide,7 which uses WebAssembly to bring up a full Python engine in the browser. PyScript introduces custom HTML tags so that you can write Python code without having to know or use JavaScript. Using these tags, you can create a static HTML file containing Python code that will run in a remote browser, with no additional installed software required.
+
+A simple PyScript “Hello, World!” HTML file might look like this:
+
+```
+<html>
+<head>
+    <link rel='stylesheet' 
+ href='https://pyscript.net/releases/2022.06.1/pyscript.css' />
+    <script defer 
+ src='https://pyscript.net/releases/2022.06.1/pyscript.js'></script>
+</head>
+<body>
+<py-script>
+import time
+print('Hello, World!')
+print(f'The current local time is {time.asctime()}')
+print(f'The current UTC time is {time.asctime(time.gmtime())}')
+</py-script>
+</body>
+</html>
+```
+
+You can save this code snippet as a static HTML file and successfully run it in a client browser, even if Python isn’t installed on your computer.
+
+>NOTE : 
+>PyScript is still in early development, so the specific tags and APIs shown here are likely to change as the package undergoes further development.
+
+For more complete and up-to-date information, see the [PyScript website](https://pyscript.net/).
+
 
 ## Resources
 
