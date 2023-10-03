@@ -157,7 +157,7 @@ For more complete and up-to-date information, see the [PyScript website](https:/
 
 We'll walk through basic features of the Python language (located in the `basics` folder):
 
-* Variables
+* [Variables](basics/variables)
 * Data Types
     * Strings
     * Numbers
