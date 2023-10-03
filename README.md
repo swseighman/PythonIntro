@@ -4,7 +4,7 @@
 ## Credits
 Portions of the material for this introduction to Python is derived from the book [Python Crash Course - Third Edition](https://nostarch.com/python-crash-course-3rd-edition).  It's available where ever you purchase your books.
 
-### Introduction
+## Introduction
 
 Python is a general-purpose, high-level programming language. It is interpreted, meaning that it does not need to be compiled into machine code before it can be run. Python is known for its simple syntax and readability, making it a popular choice for beginners and experienced programmers alike.
 
@@ -154,7 +154,9 @@ You can save this code snippet as a static HTML file and successfully run it in 
 
 For more complete and up-to-date information, see the [PyScript website](https://pyscript.net/).
 
-Next, we'll walk through basic features of the Python language:
+## Next Steps
+
+We'll walk through basic features of the Python language:
 
 * Variables
 * Data Types
@@ -176,6 +178,6 @@ Next, we'll walk through basic features of the Python language:
 
 [Python Cheat Sheets](https://github.com/ehmatthes/pcc_3e/blob/main/cheat_sheets/bw_sheets/beginners_python_cheat_sheet_pcc_all_bw.pdf)
 
-[Beginners Guides](https://wiki.python.org/moin/BeginnersGuide/Programmers)
+[Python Beginners Guides](https://wiki.python.org/moin/BeginnersGuide/Programmers)
 
 
