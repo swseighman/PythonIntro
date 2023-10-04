@@ -7,12 +7,12 @@ Variables are often described as containers where you store values. Variables ca
 
 Python uses `=` to assign values to variables. There's no need to declare a variable in advance (or to assign a data type to it), assigning a value to a variable itself declares and initializes the variable with that value.
 
->Data types are the classification or categorization of data items and include numeric types (int, float, complex), textual types (str), collection types (list, tuple, dict, set), and boolean type (bool).
+>Data types are the classification or categorization of data items (objects) and include numeric types (int, float, complex), textual types (str), collection types (list, tuple, dict, set), and boolean type (bool).
 
 Let’s try using a variable in `hello_world.py`. Add a new line at the beginning of the file, and modify the second line:
 
 ```
-message = "Hello Python!"
+message = "Hello World!"
 print(message)
 ```
 
@@ -20,10 +20,10 @@ Run this program to see what happens. You should see the same output you saw pre
 
 ```
 C:\> python hello_world.py
-Hello Python!
+Hello World!
 ```
 
-We’ve added a variable named `message`. Every variable is connected to a value (object), which is the information associated with that variable. In this case the value (object) is the `Hello Python!` text.
+We’ve added a variable named `message`. Every variable is connected to a value (object), which is the information associated with that variable. In this case the value (object) is the `Hello World!` text.
 
 When you’re using variables in Python, you need to adhere to a few rules and guidelines. Breaking some of these rules will cause errors.  Other guidelines just help you write code that’s easier to read and understand. Be sure to keep the following rules in mind when working with variables:
 
