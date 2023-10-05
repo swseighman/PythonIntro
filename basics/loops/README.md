@@ -87,20 +87,20 @@ Let’s add a second line to our message, telling each topping that we’re look
 toppings = [`pepperoni`, `sausage`, `cheese`]
 for topping in toppings:
     print(f"{topping.title()} is the best!")
-    print(f"I can`t wait to try {topping.title()}.\n")
+    print(f"I can`t wait to try a {topping.title()} pizza.\n")
 ```
 
 Because we have indented both calls to `print()`, each line will be executed once for every topping in the list. The newline `("\n")` in the second print() call inserts a blank line after each pass through the loop. This creates a set of messages that are neatly grouped for each person in the list:
 
 ```
 pepperoni is the best!
-I can`t wait to try pepperoni.
+I can`t wait to try a pepperoni pizza.
 
 sausage is the best!
-I can`t wait to try sausage.
+I can`t wait to try a sausage pizza.
 
 cheese is the best!
-I can`t wait to try cheese.
+I can`t wait to try a cheese pizza.
 ```
 
 You can use as many lines as you like in your for loops. In practice, you’ll often find it useful to do a number of different operations with each item in a list when you use a for loop.
@@ -114,7 +114,7 @@ Any lines of code after the for loop that are not indented are executed once wit
 toppings = [`pepperoni`, `sausage`, `cheese`]
 for topping in toppings:
     print(f"{topping.title()} is the best!")
-    print(f"I can`t wait to try {topping.title()}.\n")
+    print(f"I can`t wait to try a {topping.title()} pizza.\n")
 
 print("Thank you chef, that pizza was great!\n")
 ```
@@ -123,13 +123,13 @@ The first two calls to `print()` are repeated once for each topping in the list,
 
 ```
 pepperoni is the best!
-I can`t wait to try pepperoni.
+I can`t wait to try a pepperoni pizza.
 
 sausage is the best!
-I can`t wait to try sausage.
+I can`t wait to try a sausage pizza.
 
 cheese is the best!
-I can`t wait to try cheese.
+I can`t wait to try a cheese pizza.
 
 Thank you chef, that pizza was great!
 ```
