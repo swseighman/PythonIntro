@@ -34,7 +34,7 @@ If you are interested in learning a programming language, Python is a great choi
 
 #### Installing Python
 
-Installing Python is generally easy, and nowadays many Linux and UNIX distributions include a recent Python. Even some Windows computers now come with Python already installed. If you need to install Python and aren't confident about the steps, you can find a notes on the [BeginnersGuide/Download wiki page](https://wiki.python.org/moin/BeginnersGuide/Download), but installation is straightforward on most platforms.
+Installing Python is generally easy, and many Linux and UNIX distributions include Python. Even some Windows computers now come with Python already installed. If you need to install Python and aren't confident about the steps, you can find a notes on the [BeginnersGuide/Download wiki page](https://wiki.python.org/moin/BeginnersGuide/Download), but installation is straightforward on most platforms.
 
 #### Python Development Tools
 
