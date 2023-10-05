@@ -45,22 +45,22 @@ Hello, Eric!
 Sometimes you’ll want to write a prompt that’s longer than one line. For example, you might want to tell the user why you’re asking for certain input. You can assign your prompt to a variable and pass that variable to the `input()` function. This allows you to build your prompt over several lines, then write a clean `input()` statement.
 
 ```
-prompt = "If you share your name, we can personalize the messages you see."
+prompt = "\nIf you share your name, we can personalize the messages you see."
 prompt += "\nWhat is your first name? "
 
 name = input(prompt)
-print(f"\nHello, {name}!")
+print(f"\nHello, {name}!\n")
 ```
 
-This example shows one way to build a multiline string. The first line assigns the first part of the message to the variable prompt. In the second line, the operator += takes the string that was assigned to prompt and adds the new string onto the end.
+This example shows one way to build a multiline string. The first line assigns the first part of the message to the variable prompt. In the second line, the operator `+=` takes the string that was assigned to prompt and adds the new string onto the end.
 
 The prompt now spans two lines, again with space after the question mark for clarity:
 
 ```
 If you share your name, we can personalize the messages you see.
-What is your first name? Eric
+What is your first name? Scott
 
-Hello, Eric!
+Hello, Scott!
 ```
 
 #### Using int() to Accept Numerical Input
@@ -86,7 +86,7 @@ TypeError: '>=' not supported between instances of 'str' and 'int' ❷
 
 When you try to use the input to do a numerical comparison ❶, Python produces an error because it can’t compare a string to an integer: the string '21' that’s assigned to age can’t be compared to the numerical value 18 ❷.
 
-We can resolve this issue by using the int() function, which converts the input string to a numerical value. This allows the comparison to run successfully:
+We can resolve this issue by using the `int()` function, which converts the input string to a numerical value. This allows the comparison to run successfully:
 
 ```
 >>> age = input("How old are you? ")
@@ -98,7 +98,7 @@ True
 
 In this example, when we enter 21 at the prompt, Python interprets the number as a string, but the value is then converted to a numerical representation by int() ❶. Now Python can run the conditional test: it compares age (which now represents the numerical value 21) and 18 to see if age is greater than or equal to 18. This test evaluates to True.
 
-How do you use the int() function in an actual program? Consider a program that determines whether people are tall enough to ride a roller coaster:
+How do you use the `int()` function in an actual program? Consider a program that determines whether people are tall enough to ride a roller coaster:
 
 ```
 height = input("How tall are you, in inches? ")
