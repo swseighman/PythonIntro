@@ -63,7 +63,7 @@ However, be aware that you can sometimes get an arbitrary number of decimal plac
 0.30000000000000004
 ```
 
-This happens in all languages and is of little concern. Python tries to find a way to represent the result as precisely as possible, which is sometimes difficult given how computers have to represent numbers internally. Just ignore the extra decimal places for now; you’ll learn ways to deal with the extra places when you need to in the projects in Part II.
+This happens in all languages and is of little concern. Python tries to find a way to represent the result as precisely as possible, which is sometimes difficult given how computers have to represent numbers internally. Just ignore the extra decimal places for now; you’ll learn ways to deal with the extra places later.
 
 #### Integers and Floats
 When you divide any two numbers, even if they are integers that result in a whole number, you’ll always get a float:

@@ -32,7 +32,7 @@ pepperoni
 
 This is the result you want your users to see: clean, neatly formatted output.
 
-You can also use the string methods from Chapter 2 on any element in this list. For example, you can format the element `pepperoni` to look more presentable by using the title() method:
+You can also use the string methods on any element in this list. For example, you can format the element `pepperoni` to look more presentable by using the title() method:
 ```
 toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`]
 print(toppings[0].title())
