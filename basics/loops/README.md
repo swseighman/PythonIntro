@@ -50,7 +50,7 @@ Python prints the current value of topping again, which is now `sausage`. Python
 
 When you’re using loops for the first time, keep in mind that the set of steps is repeated once for each item in the list, no matter how many items are in the list. If you have a million items in your list, Python repeats these steps a million times—and usually very quickly.
 
-Also keep in mind when writing your own for loops that you can choose any topping you want for the temporary variable that will be associated with each value in the list. However, it’s helpful to choose a meaningful topping that represents a single item from the list. For example, here’s a good way to start a for loop for a list of cats, a list of dogs, and a general list of items:
+Also keep in mind when writing your own for loops that you can choose any name you want for the temporary variable that will be associated with each value in the list. However, it’s helpful to choose a meaningful name that represents a single item from the list. For example, here’s a good way to start a for loop for a list of cats, a list of dogs, and a general list of items:
 
 ```
 for cat in cats:
@@ -58,10 +58,10 @@ for dog in dogs:
 for item in list_of_items:
 ```
 
-These naming conventions can help you follow the action being done on each item within a for loop. Using singular and plural toppings can help you identify whether a section of code is working with a single element from the list or the entire list.
+These naming conventions can help you follow the action being done on each item within a for loop. Using singular and plural names can help you identify whether a section of code is working with a single element from the list or the entire list.
 
 #### Doing More Work Within a for Loop
-You can do just about anything with each item in a for loop. Let’s build on the previous example by printing a message to each topping, telling them that they performed a great trick:
+You can do just about anything with each item in a for loop. Let’s build on the previous example by printing a message to each topping, telling them how much you like each topping:
 
 ```
 toppings = [`pepperoni`, `sausage`, `cheese`]
@@ -108,7 +108,7 @@ You can use as many lines as you like in your for loops. In practice, you’ll o
 #### Doing Something After a for Loop
 What happens once a for loop has finished executing? Usually, you’ll want to summarize a block of output or move on to other work that your program must accomplish.
 
-Any lines of code after the for loop that are not indented are executed once without repetition. Let’s write a thank you to the group of toppings as a whole, thanking them for putting on an excellent show. To display this group message after all of the individual messages have been printed, we place the thank you message after the for loop, without indentation:
+Any lines of code after the for loop that are not indented are executed once without repetition. Let’s write a thank you to the group of toppings as a whole, thanking the chef for a great pizza. To display this group message after all of the individual messages have been printed, we place the thank you message after the for loop, without indentation:
 
 ```
 toppings = [`pepperoni`, `sausage`, `cheese`]
@@ -116,7 +116,7 @@ for topping in toppings:
     print(f"{topping.title()} is the best!")
     print(f"I can`t wait to try {topping.title()}.\n")
 
-print("Thank you, that pizza was great!\n")
+print("Thank you chef, that pizza was great!\n")
 ```
 
 The first two calls to `print()` are repeated once for each topping in the list, as you saw earlier. However, because the last line is not indented, it’s printed only once:
@@ -131,7 +131,7 @@ I can`t wait to try sausage.
 cheese is the best!
 I can`t wait to try cheese.
 
-Thank you, that pizza was great!
+Thank you chef, that pizza was great!
 ```
 
 When you’re processing data using a for loop, you’ll find that this is a good way to summarize an operation that was performed on an entire dataset. For example, you might use a for loop to initialize a game by running through a list of characters and displaying each character on the screen. You might then write some additional code after this loop that displays a Play Now button after all the characters have been drawn to the screen.
