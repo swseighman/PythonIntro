@@ -8,7 +8,7 @@ Say we have a list of toppings, and we want to print out each topping in the lis
 Let’s use a for loop to print out each topping in a list of toppings:
 
 ```
-toppings = [`pepperoni`, `sausage`, `cheese`]
+toppings = ['pepperoni', 'sausage', 'cheese']
 for toppings in toppings:
     print(toppings)
 ```
@@ -64,7 +64,7 @@ These naming conventions can help you follow the action being done on each item 
 You can do just about anything with each item in a for loop. Let’s build on the previous example by printing a message to each topping, telling them how much you like each topping:
 
 ```
-toppings = [`pepperoni`, `sausage`, `cheese`]
+toppings = ['pepperoni', 'sausage', 'cheese']
 for topping in toppings:
     print(f"{topping.title()} is the best!")
 ```
@@ -84,7 +84,7 @@ You can also write as many lines of code as you like in the for loop. Every inde
 Let’s add a second line to our message, telling each topping that we’re looking forward to their next trick:
 
 ```
-toppings = [`pepperoni`, `sausage`, `cheese`]
+toppings = ['pepperoni', 'sausage', 'cheese']
 for topping in toppings:
     print(f"{topping.title()} is the best!")
     print(f"I can`t wait to try a {topping.title()} pizza.\n")
@@ -111,7 +111,7 @@ What happens once a for loop has finished executing? Usually, you’ll want to s
 Any lines of code after the for loop that are not indented are executed once without repetition. Let’s write a thank you to the group of toppings as a whole, thanking the chef for a great pizza. To display this group message after all of the individual messages have been printed, we place the thank you message after the for loop, without indentation:
 
 ```
-toppings = [`pepperoni`, `sausage`, `cheese`]
+toppings = ['pepperoni', 'sausage', 'cheese']
 for topping in toppings:
     print(f"{topping.title()} is the best!")
     print(f"I can`t wait to try a {topping.title()} pizza.\n")

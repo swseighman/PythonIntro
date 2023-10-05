@@ -5,13 +5,13 @@ A list is a collection of items in a particular order. You can make a list that 
 
 In Python, square brackets (`[]`) indicate a list, and individual elements in the list are separated by commas. Here’s a simple example of a list that contains a few kinds of toppings:
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 print(toppings)
 ```
 
 If you ask Python to print a list, Python returns its representation of the list, including the square brackets:
 ```
-[`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+['pepperoni', 'sausage', 'peppers', 'mushrooms']
 ```
 
 Because this isn’t the output you want your users to see, let’s learn how to access the individual items in a list.
@@ -21,7 +21,7 @@ Lists are ordered collections, so you can access any element in a list by tellin
 
 For example, let’s pull out the first bicycle in the list toppings:
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 print(toppings[0])
 ```
 
@@ -34,7 +34,7 @@ This is the result you want your users to see: clean, neatly formatted output.
 
 You can also use the string methods on any element in this list. For example, you can format the element `pepperoni` to look more presentable by using the title() method:
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 print(toppings[0].title())
 ```
 
@@ -47,7 +47,7 @@ The second item in a list has an index of 1. Using this counting system, you can
 
 The following asks for the toppings at index 1 and index 3:
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 print(toppings[1])
 print(toppings[3])
 ```
@@ -60,7 +60,7 @@ mushrooms
 
 Python has a special syntax for accessing the last element in a list. If you ask for the item at index -1, Python always returns the last item in the list:
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 print(toppings[-1])
 ```
 
@@ -71,7 +71,7 @@ You can use individual values from a list just as you would any other variable. 
 
 Let’s try pulling the first bicycle from the list and composing a message using that value:
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 message = f"My favorite pizza topping is {toppings[0].title()}."
 
 print(message)
@@ -91,7 +91,7 @@ The syntax for modifying an element is similar to the syntax for accessing an el
 For example, say we have a list of toppings and the first item in the list is `pepperoni`. We can change the value of this first item after the list has been created:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`]
+toppings = ['pepperoni', 'sausage', 'peppers']
 print(toppings)
 
 toppings[0] = `mushrooms`
@@ -101,8 +101,8 @@ print(toppings)
 Here we define the list toppings, with `pepperoni` as the first element. Then we change the value of the first item to `mushrooms`. The output shows that the first item has been changed, while the rest of the list stays the same:
 
 ```
-[`pepperoni`, `sausage`, `peppers`]
-[`mushrooms`, `sausage`, `peppers`]
+['pepperoni', 'sausage', 'peppers']
+['mushrooms', 'sausage', 'peppers']
 ```
 
 You can change the value of any item in a list, not just the first item.
@@ -114,18 +114,18 @@ You might want to add a new element to a list for many reasons. For example, you
 The simplest way to add a new element to a list is to append the item to the list. When you append an item to a list, the new element is added to the end of the list. Using the same list we had in the previous example, we’ll add the new element `mushrooms` to the end of the list:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`]
+toppings = ['pepperoni', 'sausage', 'peppers']
 print(toppings)
 
-toppings.append(`mushrooms`)
+toppings.append('mushrooms')
 print(toppings)
 ```
 
 Here the append() method adds `mushrooms` to the end of the list, without affecting any of the other elements in the list:
 
 ```
-[`pepperoni`, `sausage`, `peppers`]
-[`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+['pepperoni', 'sausage', 'peppers']
+['pepperoni', 'sausage', 'peppers', 'mushrooms']
 ```
 
 The `append()` method makes it easy to build lists dynamically. For example, you can start with an empty list and then add items to the list using a series of `append()` calls. Using an empty list, let’s add the elements `pepperoni`, `sausage`, and `peppers` to the list:
@@ -133,9 +133,9 @@ The `append()` method makes it easy to build lists dynamically. For example, you
 ```
 toppings = []
 
-toppings.append(`pepperoni`)
-toppings.append(`sausage`)
-toppings.append(`peppers`)
+toppings.append('pepperoni')
+toppings.append('sausage')
+toppings.append('peppers')
 
 print(toppings)
 ```
@@ -143,7 +143,7 @@ print(toppings)
 The resulting list looks exactly the same as the lists in the previous examples:
 
 ```
-[`pepperoni`, `sausage`, `peppers`]
+['pepperoni', 'sausage', 'peppers']
 ```
 
 Building lists this way is very common, because you often won’t know the data your users want to store in a program until after the program is running. To put your users in control, start by defining an empty list that will hold the users’ values. Then append each new value provided to the list you just created.
@@ -151,16 +151,16 @@ Building lists this way is very common, because you often won’t know the data 
 #### Inserting Elements into a List
 You can add a new element at any position in your list by using the `insert()` method. You do this by specifying the index of the new element and the value of the new item:
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`]
+toppings = ['pepperoni', 'sausage', 'peppers']
 
-toppings.insert(0, `mushrooms`)
+toppings.insert(0, 'mushrooms')
 print(toppings)
 ```
 
 In this example, we insert the value `mushrooms` at the beginning of the list. The `insert()` method opens a space at position 0 and stores the value `mushrooms` at that location:
 
 ```
-[`mushrooms`, `pepperoni`, `sausage`, `peppers`]
+['mushrooms', 'pepperoni', 'sausage', 'peppers']
 ```
 
 This operation shifts every other value in the list one position to the right.
@@ -172,7 +172,7 @@ Often, you’ll want to remove an item or a set of items from a list. For exampl
 If you know the position of the item you want to remove from a list, you can use the `del` statement:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`]
+toppings = ['pepperoni', 'sausage', 'peppers']
 print(toppings)
 
 del toppings[0]
@@ -182,14 +182,14 @@ print(toppings)
 Here we use the `del` statement to remove the first item, `pepperoni`, from the list of toppings:
 
 ```
-[`pepperoni`, `sausage`, `peppers`]
-[`sausage`, `peppers`]
+['pepperoni', 'sausage', 'peppers']
+['sausage', 'peppers']
 ```
 
 You can remove an item from any position in a list using the `del` statement if you know its index. For example, here’s how to remove the second item, `sausage`, from the list:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`]
+toppings = ['pepperoni', 'sausage', 'peppers']
 print(toppings)
 
 del toppings[1]
@@ -199,8 +199,8 @@ print(toppings)
 The second topping is deleted from the list:
 
 ```
-[`pepperoni`, `sausage`, `peppers`]
-[`pepperoni`, `peppers`]
+['pepperoni', 'sausage', 'peppers']
+['pepperoni', 'peppers']
 ```
 
 In both examples, you can no longer access the value that was removed from the list after the `del` statement is used.
@@ -213,7 +213,7 @@ The `pop()` method removes the last item in a list, but it lets you work with th
 Let’s pop a topping from the list of toppings:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`] ❶ 
+toppings = ['pepperoni', 'sausage', 'peppers'] ❶ 
 print(toppings)
 
 popped_topping = toppings.pop() ❷ 
@@ -226,15 +226,15 @@ We start by defining and printing the list toppings ❶. Then we pop a value fro
 The output shows that the value `peppers` was removed from the end of the list and is now assigned to the variable popped_topping:
 
 ```
-[`pepperoni`, `sausage`, `peppers`]
-[`pepperoni`, `sausage`]
+['pepperoni', 'sausage', 'peppers']
+['pepperoni', 'sausage']
 peppers
 ```
 
 How might this `pop()` method be useful? Imagine that the toppings in the list are stored in chronological order, according to when we owned them. If this is the case, we can use the `pop()` method to print a statement about the last topping we added:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`]
+toppings = ['pepperoni', 'sausage', 'peppers']
 
 last_ordered = toppings.pop()
 print(f"The last topping I ordered was {last_ordered.title()}.")
@@ -250,7 +250,7 @@ The last topping I ordered was peppers.
 You can use `pop()` to remove an item from any position in a list by including the index of the item you want to remove in parentheses:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`]
+toppings = ['pepperoni', 'sausage', 'peppers']
 
 first_ordered = toppings.pop(0)
 print(f"The first topping I ordered was {first_ordered.title()}.")
@@ -272,24 +272,24 @@ Sometimes you won’t know the position of the value you want to remove from a l
 For example, say we want to remove the value `mushrooms` from the list of toppings:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`]
+toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 print(toppings)
 
-toppings.remove(`mushrooms`)
+toppings.remove('mushrooms')
 print(toppings)
 ```
 
 Here the `remove()` method tells Python to figure out where `mushrooms` appears in the list and remove that element:
 
 ```
-[`pepperoni`, `sausage`, `peppers`, `mushrooms`]
-[`pepperoni`, `sausage`, `peppers`]
+['pepperoni', 'sausage', 'peppers', 'mushrooms']
+['pepperoni', 'sausage', 'peppers']
 ```
 
 You can also use the `remove()` method to work with a value that’s being removed from a list. Let’s remove the value `peppers` and print a reason for removing it from the list:
 
 ```
-toppings = [`pepperoni`, `sausage`, `peppers`, `mushrooms`] ❶ 
+toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms'] ❶ 
 print(toppings)
 
 too_spicy = `peppers` ❷ 
@@ -301,8 +301,8 @@ print(f"\n{too_spicy.title()} are too spicy for me.") ❹
 After defining the list ❶, we assign the value `peppers` to a variable called `too_spicy` ❷. We then use this variable to tell Python which value to remove from the list ❸. The value `peppers` has been removed from the list ❹ but is still accessible through the variable `too_spicy`, allowing us to print a statement about why we removed `peppers` from the list of toppings:
 
 ```
-[`pepperoni`, `sausage`, `peppers`, `mushrooms`]
-[`pepperoni`, `sausage`, `mushrooms`]
+['pepperoni', 'sausage', 'peppers', 'mushrooms']
+['pepperoni', 'sausage', 'mushrooms']
 
 Peppers are too spicy for me.
 ```
