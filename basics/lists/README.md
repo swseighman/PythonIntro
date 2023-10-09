@@ -19,7 +19,7 @@ Because this isn’t the output you want your users to see, let’s learn how to
 #### Accessing Elements in a List
 Lists are ordered collections, so you can access any element in a list by telling Python the position, or index, of the item desired. To access an element in a list, write the name of the list followed by the index of the item enclosed in square brackets.
 
-For example, let’s pull out the first bicycle in the list toppings:
+For example, let’s pull out the first topping in the list toppings:
 ```
 toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 print(toppings[0])
@@ -77,7 +77,7 @@ message = f"My favorite pizza topping is {toppings[0].title()}."
 print(message)
 ```
 
-We build a sentence using the value at toppings[0] and assign it to the variable message. The output is a simple sentence about the first bicycle in the list:
+We build a sentence using the value at toppings[0] and assign it to the variable message. The output is a simple sentence about the first topping in the list:
 ```
 My favorite pizza topping is pepperoni.
 ```

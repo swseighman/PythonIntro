@@ -15,8 +15,8 @@ This flexibility allows you to use quotes and apostrophes within your strings:
 
 ```
 'I told my friend, "Python is my favorite language!"'
-"The language `Python` is named after Monty Python, not the snake."
-"One of Python`s strengths is its diverse and supportive community."
+"The language 'Python' is named after Monty Python, not the snake."
+"One of Python's strengths is its diverse and supportive community."
 ```
 
 #### Changing Case in a String with Methods
@@ -33,6 +33,7 @@ print(name.title())
 Save this file as `name.py` and then run it. You should see this output:
 
 ```
+C:\> python name.py
 Joe Thomas
 ```
 
@@ -101,13 +102,13 @@ message = f"Hello, {full_name.title()}!" ❶
 print(message) ❷ 
 ```
 
-This code displays the message Hello, Joe Thomas! as well, but by assigning the message to a variable ❶ we make the final `print()` call much simpler ❷.
+This code displays the message `Hello, Joe Thomas!` as well, but by assigning the message to a variable ❶ we make the final `print()` call much simpler ❷.
 
 #### Adding Whitespace to Strings with Tabs or Newlines
 
 In programming, whitespace refers to any nonprinting characters, such as spaces, tabs, and end-of-line symbols. You can use whitespace to organize your output so it’s easier for users to read.
 
-To add a tab to your text, use the character combination \t:
+To add a tab to your text, use the character combination `\t`:
 
 ```
 >>> print("Go Browns!")
@@ -116,7 +117,7 @@ Python
     Go Browns!
 ```
 
-To add a newline in a string, use the character combination \n:
+To add a newline in a string, use the character combination `\n`:
 
 ```
 >>> print("Teams:\nBrowns\nSteelers\nBengals\nRavens")
@@ -127,7 +128,7 @@ Bengals
 Ravens
 ```
 
-You can also combine tabs and newlines in a single string. The string "\n\t" tells Python to move to a new line, and start the next line with a tab. The following example shows how you can use a one-line string to generate four lines of output:
+You can also combine tabs and newlines in a single string. The string `\n\t` tells Python to move to a new line, and start the next line with a tab. The following example shows how you can use a one-line string to generate four lines of output:
 
 ```
 >>> print("Teams:\n\tBrowns\n\tSteelers\n\tBengals\n\tRavens")

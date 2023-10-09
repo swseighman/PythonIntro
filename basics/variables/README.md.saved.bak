@@ -82,14 +82,14 @@ Rules for Keywords in Python
 | with     | yield    |
 
 
-#### Rules for Naming Python Identifiers
+#### Rules for Naming Python Variables
 * It cannot be a reserved Python keyword
 * It should not contain white space
 * It can be a combination of A-Z, a-z, 0-9, or underscore
 * It should start with an alphabet character or an underscore ( _ )
 * It should not contain any special character other than an underscore ( _ )
 
-#### Examples of Python Identifiers
+#### Examples of Python Variables
 Valid identifiers:
 
 ```
@@ -99,7 +99,7 @@ _1_var
 var_1
 ```
 
-Invalid Identifiers
+Invalid Variable Names
 
 ```
 !var1
