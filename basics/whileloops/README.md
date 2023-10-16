@@ -28,11 +28,11 @@ Python repeats the loop as long as the condition `current_number <= 5` is true. 
 The programs you use every day most likely contain while loops. For example, a game needs a while loop to keep running as long as you want to keep playing, and so it can stop running as soon as you ask it to quit. Programs wouldn’t be fun to use if they stopped running before we told them to or kept running even after we wanted to quit, so while loops are quite useful.
 
 #### Letting the User Choose When to Quit
-We can make the parrot.py program run as long as the user wants by putting most of the program inside a while loop. We’ll define a quit value and then keep the program running as long as the user has not entered the quit value:
+We can make the `repeat.py` program run as long as the user wants by putting most of the program inside a while loop. We’ll define a quit value and then keep the program running as long as the user has not entered the quit value:
 
 ```
-prompt = "\nTell me something, and I will repeat it back to you:"
-prompt += "\nEnter 'quit' to end the program. "
+prompt = "\nTell me something, and I will repeat it back to you or enter 'quit' to end the program."
+prompt += "\nEnter something: "
 
 message = ""
 while message != 'quit':

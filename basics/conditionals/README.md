@@ -4,10 +4,10 @@
 
 Programming often involves examining a set of conditions and deciding which action to take based on those conditions. Python’s if statement allows you to examine the current state of a program and respond appropriately to that state.
 
-In this chapter, you’ll learn to write conditional tests, which allow you to check any condition of interest. You’ll learn to write simple if statements, and you’ll learn how to create a more complex series of if statements to identify when the exact conditions you want are present. You’ll then apply this concept to lists, so you’ll be able to write a for loop that handles most items in a list one way but handles certain items with specific values in a different way.
+In this section, you’ll learn to write conditional tests, which allow you to check any condition of interest. You’ll learn to write simple `if` statements, and you’ll learn how to create a more complex series of if statements to identify when the exact conditions you want are present. You’ll then apply this concept to lists, so you’ll be able to write a `for loop` that handles most items in a list one way but handles certain items with specific values in a different way.
 
 #### A Simple Example
-The following example shows how if tests let you respond to special situations correctly. Imagine you have a list of cars and you want to print out the name of each car. Car names are proper names, so the names of most cars should be printed in title case. However, the value `bmw` should be printed in all uppercase. The following code loops through a list of car names and looks for the value `bmw`. Whenever the value is `bmw`, it’s printed in uppercase instead of title case:
+The following example shows how `if` tests let you respond to special situations correctly. Imagine you have a list of cars and you want to print out the name of each car. Car names are proper names, so the names of most cars should be printed in title case. However, the value `bmw` should be printed in all uppercase. The following code loops through a list of car names and looks for the value `bmw`. Whenever the value is `bmw`, it’s printed in uppercase instead of title case:
 
 ```
 cars = [`audi`, `bmw`, `subaru`, `toyota`]
@@ -28,7 +28,7 @@ Subaru
 Toyota
 ```
 
-This example combines a number of the concepts you’ll learn about in this chapter. Let’s begin by looking at the kinds of tests you can use to examine the conditions in your program.
+This example combines a number of the concepts you’ll learn about in this section. Let’s begin by looking at the kinds of tests you can use to examine the conditions in your program.
 
 #### Conditional Tests
 At the heart of every if statement is an expression that can be evaluated as True or False and is called a conditional test. Python uses the values True and False to decide whether the code in an if statement should be executed. If a conditional test evaluates to True, Python executes the code following the if statement. If the test evaluates to False, Python ignores the code following the if statement.

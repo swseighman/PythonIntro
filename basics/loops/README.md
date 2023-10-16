@@ -74,9 +74,9 @@ The only difference in this code is where we compose a message to each topping, 
 The output shows a personalized message for each topping in the list:
 
 ```
-pepperoni is the best!
-sausage is the best!
-cheese is the best!
+Pepperoni is the best!
+Sausage is the best!
+Cheese is the best!
 ```
 
 You can also write as many lines of code as you like in the for loop. Every indented line following the line for topping in toppings is considered inside the loop, and each indented line is executed once for each value in the list. Therefore, you can do as much work as you like with each value in the list.
@@ -93,14 +93,14 @@ for topping in toppings:
 Because we have indented both calls to `print()`, each line will be executed once for every topping in the list. The newline `("\n")` in the second print() call inserts a blank line after each pass through the loop. This creates a set of messages that are neatly grouped for each person in the list:
 
 ```
-pepperoni is the best!
-I can`t wait to try a pepperoni pizza.
+Pepperoni is the best!
+I can`t wait to try a Pepperoni pizza.
 
-sausage is the best!
-I can`t wait to try a sausage pizza.
+Sausage is the best!
+I can`t wait to try a Sausage pizza.
 
-cheese is the best!
-I can`t wait to try a cheese pizza.
+Cheese is the best!
+I can`t wait to try a Cheese pizza.
 ```
 
 You can use as many lines as you like in your for loops. In practice, you’ll often find it useful to do a number of different operations with each item in a list when you use a for loop.
@@ -122,14 +122,14 @@ print("Thank you chef, that pizza was great!\n")
 The first two calls to `print()` are repeated once for each topping in the list, as you saw earlier. However, because the last line is not indented, it’s printed only once:
 
 ```
-pepperoni is the best!
-I can`t wait to try a pepperoni pizza.
+Pepperoni is the best!
+I can`t wait to try a Pepperoni pizza.
 
-sausage is the best!
-I can`t wait to try a sausage pizza.
+Sausage is the best!
+I can`t wait to try a Sausage pizza.
 
-cheese is the best!
-I can`t wait to try a cheese pizza.
+Cheese is the best!
+I can`t wait to try a Cheese pizza.
 
 Thank you chef, that pizza was great!
 ```

@@ -69,7 +69,7 @@ This code returns the value `mushrooms`. This syntax is quite useful, because yo
 #### Using Individual Values from a List
 You can use individual values from a list just as you would any other variable. For example, you can use f-strings to create a message based on a value from a list.
 
-Let’s try pulling the first bicycle from the list and composing a message using that value:
+Let’s try pulling the first topping from the list and composing a message using that value:
 ```
 toppings = ['pepperoni', 'sausage', 'peppers', 'mushrooms']
 message = f"My favorite pizza topping is {toppings[0].title()}."
